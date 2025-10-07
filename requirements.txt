@@ -23,9 +23,9 @@ albumentations==1.3.1
 # Utilities
 tqdm==4.66.1
 
-# Production Server (not used on Windows dev)
-# gunicorn==21.2.0
-# gevent==23.7.0
+# Production Server (enabled for Render/Heroku deploys)
+gunicorn==21.2.0
+gevent==23.7.0
 
 # Monitoring and Logging
 psutil==5.9.5
