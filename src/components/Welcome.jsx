@@ -921,7 +921,7 @@ export default function Welcome() {
                 <h4 style={{ margin: "0 0 0.3rem 0", color: "#2d3436" }}>
                   Phone
                 </h4>
-                <p style={{ margin: 0, color: "#636e72" }}>(555) 123-4567</p>
+                <p style={{ margin: 0, color: "#636e72" }}>(+27) 814611686</p>
               </div>
             </div>
             <div
