@@ -5,13 +5,15 @@ Werkzeug==2.3.7
 
 # AI/ML Dependencies - Semantic Segmentation
 --extra-index-url https://download.pytorch.org/whl/cpu
-torch==2.7.1+cpu
-torchvision==0.22.0+cpu
+- torch==2.7.1+cpu
+- torchvision==0.22.0+cpu
++ torch
++ torchvision
 segmentation-models-pytorch==0.3.3
 timm==0.9.2
-# efficientnet-pytorch and pretrainedmodels used for training only; keep if needed
-efficientnet-pytorch==0.7.1
-pretrainedmodels==0.7.4
+- # efficientnet-pytorch and pretrainedmodels used for training only; keep if needed
+- efficientnet-pytorch==0.7.1
+- pretrainedmodels==0.7.4
 opencv-python-headless==4.8.1.78
 Pillow==10.0.1
 numpy==1.26.4
