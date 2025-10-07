@@ -1,0 +1,44 @@
+2025-10-02 03:18:46,814 - INFO - Starting final dental segmentation training...
+2025-10-02 03:18:46,815 - INFO - Training started at: 2025-10-02 03:18:46.815065
+2025-10-02 03:18:46,815 - INFO - Using device: cpu
+2025-10-02 03:18:46,816 - INFO - Found 5 images and 5 masks
+2025-10-02 03:18:46,822 - INFO - Created training dataset with 250 samples
+2025-10-02 03:18:48,513 - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2025-10-02 03:18:50,042 - INFO - Starting training...
+2025-10-02 03:19:35,289 - INFO - Epoch 0/300
+2025-10-02 03:19:35,289 - INFO - Loss: 0.6343
+2025-10-02 03:19:35,290 - INFO - Accuracy: 0.5597
+2025-10-02 03:19:35,290 - INFO - Mean IoU: 0.3763
+2025-10-02 03:19:35,290 - INFO - Mean Dice: 0.5405
+2025-10-02 03:19:35,290 - INFO - Learning Rate: 0.000200
+2025-10-02 03:19:36,009 - INFO - New best model saved with loss: 0.6343
+2025-10-02 03:37:36,907 - INFO - Epoch 25/300
+2025-10-02 03:37:36,908 - INFO - Loss: 0.5561
+2025-10-02 03:37:36,908 - INFO - Accuracy: 0.5746
+2025-10-02 03:37:36,908 - INFO - Mean IoU: 0.3806
+2025-10-02 03:37:36,908 - INFO - Mean Dice: 0.5395
+2025-10-02 03:37:36,908 - INFO - Learning Rate: 0.000196
+2025-10-02 03:54:38,202 - INFO - Epoch 50/300
+2025-10-02 03:54:38,202 - INFO - Loss: 0.5539
+2025-10-02 03:54:38,203 - INFO - Accuracy: 0.5747
+2025-10-02 03:54:38,203 - INFO - Mean IoU: 0.3805
+2025-10-02 03:54:38,203 - INFO - Mean Dice: 0.5394
+2025-10-02 03:54:38,203 - INFO - Learning Rate: 0.000186
+2025-10-02 04:12:04,823 - INFO - Epoch 75/300
+2025-10-02 04:12:04,823 - INFO - Loss: 0.5536
+2025-10-02 04:12:04,823 - INFO - Accuracy: 0.5750
+2025-10-02 04:12:04,823 - INFO - Mean IoU: 0.3811
+2025-10-02 04:12:04,823 - INFO - Mean Dice: 0.5404
+2025-10-02 04:12:04,823 - INFO - Learning Rate: 0.000170
+2025-10-02 04:29:10,657 - INFO - Epoch 100/300
+2025-10-02 04:29:10,658 - INFO - Loss: 0.5547
+2025-10-02 04:29:10,658 - INFO - Accuracy: 0.5736
+2025-10-02 04:29:10,658 - INFO - Mean IoU: 0.3795
+2025-10-02 04:29:10,658 - INFO - Mean Dice: 0.5388
+2025-10-02 04:29:10,658 - INFO - Learning Rate: 0.000149
+2025-10-02 04:46:14,458 - INFO - Epoch 125/300
+2025-10-02 04:46:14,458 - INFO - Loss: 0.5534
+2025-10-02 04:46:14,459 - INFO - Accuracy: 0.5751
+2025-10-02 04:46:14,459 - INFO - Mean IoU: 0.3812
+2025-10-02 04:46:14,459 - INFO - Mean Dice: 0.5407
+2025-10-02 04:46:14,459 - INFO - Learning Rate: 0.000125

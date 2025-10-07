@@ -1,0 +1,25 @@
+{
+  "evaluation_date": "2025-10-02T03:07:41.973385",
+  "model_path": "models/dental_segmentation_simple.pth",
+  "test_samples": 5,
+  "device": "cpu",
+  "metrics": {
+    "iou_mean": 0.0,
+    "iou_std": 0.0,
+    "dice_mean": 0.0,
+    "dice_std": 0.0,
+    "precision_mean": 0.0,
+    "precision_std": 0.0,
+    "recall_mean": 0.0,
+    "recall_std": 0.0,
+    "accuracy_mean": 0.500823974609375,
+    "accuracy_std": 0.0031997793449381356
+  },
+  "presentation_metrics": {
+    "iou_percentage": "0.0%",
+    "dice_percentage": "0.0%",
+    "precision_percentage": "0.0%",
+    "recall_percentage": "0.0%",
+    "accuracy_percentage": "50.1%"
+  }
+}

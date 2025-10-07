@@ -1,0 +1,55 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="patientGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f8ff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#e6f3ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ddeeff;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="heartGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ff6b9d;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#4a90e2;stop-opacity:0.1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#patientGradient)"/>
+  
+  <!-- Caring heart shapes -->
+  <g opacity="0.1">
+    <!-- Heart top left -->
+    <path d="M250 200 C250 180, 230 160, 210 160 C190 160, 170 180, 170 200 C170 220, 190 240, 210 260 L230 280 L250 260 C270 240, 290 220, 290 200 C290 180, 270 160, 250 160 C230 160, 210 180, 210 200" fill="url(#heartGradient)"/>
+    
+    <!-- Heart top right -->
+    <path d="M1650 300 C1650 280, 1630 260, 1610 260 C1590 260, 1570 280, 1570 300 C1570 320, 1590 340, 1610 360 L1630 380 L1650 360 C1670 340, 1690 320, 1690 300 C1690 280, 1670 260, 1650 260 C1630 260, 1610 280, 1610 300" fill="url(#heartGradient)"/>
+    
+    <!-- Heart bottom left -->
+    <path d="M350 750 C350 730, 330 710, 310 710 C290 710, 270 730, 270 750 C270 770, 290 790, 310 810 L330 830 L350 810 C370 790, 390 770, 390 750 C390 730, 370 710, 350 710 C330 710, 310 730, 310 750" fill="url(#heartGradient)"/>
+  </g>
+  
+  <!-- Gentle medical cross symbols -->
+  <g opacity="0.06">
+    <rect x="500" y="400" width="40" height="10" rx="5" fill="#4a90e2"/>
+    <rect x="515" y="385" width="10" height="40" rx="5" fill="#4a90e2"/>
+    
+    <rect x="1200" y="600" width="30" height="8" rx="4" fill="#4a90e2"/>
+    <rect x="1211" y="589" width="8" height="30" rx="4" fill="#4a90e2"/>
+    
+    <rect x="800" y="200" width="25" height="6" rx="3" fill="#4a90e2"/>
+    <rect x="809" y="191" width="6" height="25" rx="3" fill="#4a90e2"/>
+  </g>
+  
+  <!-- Soft circular elements -->
+  <g opacity="0.04">
+    <circle cx="600" cy="300" r="100" fill="#87ceeb"/>
+    <circle cx="1300" cy="700" r="80" fill="#b0e0e6"/>
+    <circle cx="400" cy="800" r="60" fill="#87ceeb"/>
+    <circle cx="1500" cy="400" r="90" fill="#b0e0e6"/>
+  </g>
+  
+  <!-- Gentle sparkles for cleanliness -->
+  <g opacity="0.1">
+    <polygon points="700,250 705,260 715,260 707,268 710,278 700,272 690,278 693,268 685,260 695,260" fill="#ffffff"/>
+    <polygon points="1100,450 1105,460 1115,460 1107,468 1110,478 1100,472 1090,478 1093,468 1085,460 1095,460" fill="#ffffff"/>
+    <polygon points="900,700 905,710 915,710 907,718 910,728 900,722 890,728 893,718 885,710 895,710" fill="#ffffff"/>
+  </g>
+</svg>

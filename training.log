@@ -1,0 +1,26 @@
+2025-10-02 03:14:21,996 - INFO - Starting improved dental segmentation training...
+2025-10-02 03:14:21,997 - INFO - Training started at: 2025-10-02 03:14:21.997237
+2025-10-02 03:14:21,997 - INFO - Using device: cpu
+2025-10-02 03:14:21,998 - INFO - Found 5 images and 5 masks
+2025-10-02 03:14:22,036 - INFO - 
+==================================================
+2025-10-02 03:14:22,037 - INFO - FOLD 1
+2025-10-02 03:14:22,037 - INFO - ==================================================
+2025-10-02 03:14:53,127 - INFO - Starting improved dental segmentation training...
+2025-10-02 03:14:53,128 - INFO - Training started at: 2025-10-02 03:14:53.128366
+2025-10-02 03:14:53,128 - INFO - Using device: cpu
+2025-10-02 03:14:53,129 - INFO - Found 5 images and 5 masks
+2025-10-02 03:14:53,130 - INFO - 
+==================================================
+2025-10-02 03:14:53,131 - INFO - FOLD 1
+2025-10-02 03:14:53,131 - INFO - ==================================================
+2025-10-02 03:14:53,449 - INFO - Starting training for fold 1
+2025-10-02 03:15:41,282 - INFO - Starting improved dental segmentation training...
+2025-10-02 03:15:41,282 - INFO - Training started at: 2025-10-02 03:15:41.282718
+2025-10-02 03:15:41,282 - INFO - Using device: cpu
+2025-10-02 03:15:41,283 - INFO - Found 5 images and 5 masks
+2025-10-02 03:15:41,284 - INFO - 
+==================================================
+2025-10-02 03:15:41,284 - INFO - FOLD 1
+2025-10-02 03:15:41,285 - INFO - ==================================================
+2025-10-02 03:15:41,594 - INFO - Starting training for fold 1

@@ -1,0 +1,73 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="dentistGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#e9ecef;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dee2e6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="toolGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6c757d;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#495057;stop-opacity:0.1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#dentistGradient)"/>
+  
+  <!-- Dental tools silhouettes -->
+  <g opacity="0.08">
+    <!-- Dental mirror top left -->
+    <circle cx="200" cy="200" r="25" fill="url(#toolGradient)"/>
+    <rect x="195" y="225" width="10" height="80" rx="5" fill="url(#toolGradient)"/>
+    
+    <!-- Dental probe top right -->
+    <rect x="1600" y="250" width="8" height="100" rx="4" fill="url(#toolGradient)"/>
+    <circle cx="1604" cy="245" r="5" fill="url(#toolGradient)"/>
+    
+    <!-- Dental drill bottom left -->
+    <rect x="300" y="800" width="12" height="120" rx="6" fill="url(#toolGradient)"/>
+    <rect x="294" y="790" width="24" height="20" rx="10" fill="url(#toolGradient)"/>
+    
+    <!-- Dental forceps bottom right -->
+    <path d="M1500 850 Q1480 830 1460 850 L1460 900 Q1460 920 1480 920 Q1500 920 1520 920 Q1540 920 1540 900 L1540 850 Q1520 830 1500 850" fill="url(#toolGradient)"/>
+    <rect x="1475" y="920" width="50" height="8" rx="4" fill="url(#toolGradient)"/>
+  </g>
+  
+  <!-- Professional tooth illustrations -->
+  <g opacity="0.06">
+    <!-- Molar tooth -->
+    <path d="M600 300 Q580 280 560 300 Q540 320 560 340 L560 380 Q560 400 580 400 Q600 400 620 400 Q640 400 640 380 L640 340 Q660 320 640 300 Q620 280 600 300 Z" fill="#20c997"/>
+    <rect x="575" y="385" width="10" height="20" fill="#20c997"/>
+    <rect x="595" y="385" width="10" height="20" fill="#20c997"/>
+    <rect x="615" y="385" width="10" height="20" fill="#20c997"/>
+    
+    <!-- Incisor tooth -->
+    <path d="M1200 600 Q1180 580 1160 600 Q1140 620 1160 640 L1160 700 Q1160 720 1180 720 Q1200 720 1220 720 Q1240 720 1240 700 L1240 640 Q1260 620 1240 600 Q1220 580 1200 600 Z" fill="#20c997"/>
+    <rect x="1190" y="705" width="20" height="25" fill="#20c997"/>
+  </g>
+  
+  <!-- Geometric dental patterns -->
+  <g opacity="0.04">
+    <rect x="400" y="500" width="80" height="80" rx="40" fill="#6f42c1"/>
+    <rect x="1300" y="300" width="60" height="60" rx="30" fill="#6f42c1"/>
+    <rect x="800" y="750" width="100" height="100" rx="50" fill="#6f42c1"/>
+  </g>
+  
+  <!-- Professional grid pattern -->
+  <g opacity="0.02">
+    <defs>
+      <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+        <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#6c757d" stroke-width="1"/>
+      </pattern>
+    </defs>
+    <rect width="1920" height="1080" fill="url(#grid)"/>
+  </g>
+  
+  <!-- Clean sparkles for sterile environment -->
+  <g opacity="0.1">
+    <polygon points="750,200 755,210 765,210 757,218 760,228 750,222 740,228 743,218 735,210 745,210" fill="#ffffff"/>
+    <polygon points="1050,500 1055,510 1065,510 1057,518 1060,528 1050,522 1040,528 1043,518 1035,510 1045,510" fill="#ffffff"/>
+    <polygon points="500,650 505,660 515,660 507,668 510,678 500,672 490,678 493,668 485,660 495,660" fill="#ffffff"/>
+    <polygon points="1400,750 1405,760 1415,760 1407,768 1410,778 1400,772 1390,778 1393,768 1385,760 1395,760" fill="#ffffff"/>
+  </g>
+</svg>

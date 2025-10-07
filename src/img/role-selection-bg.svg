@@ -1,0 +1,48 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e6f0fa;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f0f8ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e8f5e9;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="toothGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#4a90e2;stop-opacity:0.3" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#mainGradient)"/>
+  
+  <!-- Decorative tooth shapes -->
+  <g opacity="0.1">
+    <!-- Large tooth top left -->
+    <path d="M200 150 Q180 130 160 150 Q140 170 160 190 L160 250 Q160 270 180 270 Q200 270 220 270 Q240 270 240 250 L240 190 Q260 170 240 150 Q220 130 200 150 Z" fill="url(#toothGradient)"/>
+    
+    <!-- Medium tooth top right -->
+    <path d="M1600 200 Q1580 180 1560 200 Q1540 220 1560 240 L1560 300 Q1560 320 1580 320 Q1600 320 1620 320 Q1640 320 1640 300 L1640 240 Q1660 220 1640 200 Q1620 180 1600 200 Z" fill="url(#toothGradient)"/>
+    
+    <!-- Small tooth bottom left -->
+    <path d="M300 800 Q280 780 260 800 Q240 820 260 840 L260 900 Q260 920 280 920 Q300 920 320 920 Q340 920 340 900 L340 840 Q360 820 340 800 Q320 780 300 800 Z" fill="url(#toothGradient)"/>
+    
+    <!-- Large tooth bottom right -->
+    <path d="M1500 750 Q1480 730 1460 750 Q1440 770 1460 790 L1460 850 Q1460 870 1480 870 Q1500 870 1520 870 Q1540 870 1540 850 L1540 790 Q1560 770 1540 750 Q1520 730 1500 750 Z" fill="url(#toothGradient)"/>
+  </g>
+  
+  <!-- Subtle geometric patterns -->
+  <g opacity="0.05">
+    <circle cx="400" cy="300" r="80" fill="#4a90e2"/>
+    <circle cx="1400" cy="600" r="60" fill="#34c759"/>
+    <circle cx="800" cy="150" r="40" fill="#4a90e2"/>
+    <circle cx="1200" cy="900" r="70" fill="#34c759"/>
+  </g>
+  
+  <!-- Floating bubbles for dental freshness -->
+  <g opacity="0.08">
+    <circle cx="600" cy="400" r="15" fill="#ffffff"/>
+    <circle cx="1100" cy="300" r="20" fill="#ffffff"/>
+    <circle cx="500" cy="700" r="12" fill="#ffffff"/>
+    <circle cx="1300" cy="500" r="18" fill="#ffffff"/>
+    <circle cx="900" cy="800" r="14" fill="#ffffff"/>
+  </g>
+</svg>

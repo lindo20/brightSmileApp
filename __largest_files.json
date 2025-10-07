@@ -1,0 +1,152 @@
+[
+    {
+        "SizeMB":  174.35,
+        "FullName":  "C:\\Users\\lindo\\Desktop\\SmileApp3\\SmileApp\\node_modules\\.cache\\default-development\\2.pack",
+        "Length":  182820987
+    },
+    {
+        "SizeMB":  164.16,
+        "FullName":  "C:\\Users\\lindo\\Desktop\\SmileApp3\\SmileApp\\models\\dental_segmentation_best.pth",
+        "Length":  172132475
+    },
+    {
+        "SizeMB":  85.77,
+        "FullName":  "C:\\Users\\lindo\\Desktop\\SmileApp3\\SmileApp\\models\\dental_segmentation_simple.pth",
+        "Length":  89933846
+    },
+    {
+        "SizeMB":  54.8,
+        "FullName":  "C:\\Users\\lindo\\Desktop\\SmileApp3\\SmileApp\\node_modules\\.cache\\default-development\\1.pack",
+        "Length":  57460134
+    },
+    {
+        "SizeMB":  12.28,
+        "FullName":  "C:\\Users\\lindo\\Desktop\\SmileApp3\\SmileApp\\node_modules\\.cache\\default-development\\0.pack",
+        "Length":  12880629
+    },
+    {
+        "SizeMB":  11.14,
+        "FullName":  "C:\\Users\\lindo\\Desktop\\SmileApp3\\SmileApp\\node_modules\\typescript\\lib\\tsserver.js",
+        "Length":  11676702
+    },
+    {
+        "SizeMB":  11.08,
+        "FullName":  "C:\\Users\\lindo\\Desktop\\SmileApp3\\SmileApp\\node_modules\\typescript\\lib\\tsserverlibrary.js",
+        "Length":  11615475
+    },
+    {
+        "SizeMB":  10.44,
+        "FullName":  "C:\\Users\\lindo\\Desktop\\SmileApp3\\SmileApp\\node_modules\\typescript\\lib\\typescriptServices.js",
+        "Length":  10945736
+    },
+    {
+        "SizeMB":  10.44,
+        "FullName":  "C:\\Users\\lindo\\Desktop\\SmileApp3\\SmileApp\\node_modules\\typescript\\lib\\typescript.js",
+        "Length":  10945729
+    },
+    {
+        "SizeMB":  8.25,
+        "FullName":  "C:\\Users\\lindo\\Desktop\\SmileApp3\\SmileApp\\build\\static\\js\\main.9b95087f.js.map",
+        "Length":  8645864
+    },
+    {
+        "SizeMB":  7.77,
+        "FullName":  "C:\\Users\\lindo\\Desktop\\SmileApp3\\SmileApp\\node_modules\\typescript\\lib\\typingsInstaller.js",
+        "Length":  8148122
+    },
+    {
+        "SizeMB":  6.71,
+        "FullName":  "C:\\Users\\lindo\\Desktop\\SmileApp3\\SmileApp\\node_modules\\react-icons\\gi\\index.js",
+        "Length":  7037131
+    },
+    {
+        "SizeMB":  6.62,
+        "FullName":  "C:\\Users\\lindo\\Desktop\\SmileApp3\\SmileApp\\node_modules\\react-icons\\gi\\index.mjs",
+        "Length":  6945096
+    },
+    {
+        "SizeMB":  5.87,
+        "FullName":  "C:\\Users\\lindo\\Desktop\\SmileApp3\\SmileApp\\node_modules\\typescript\\lib\\tsc.js",
+        "Length":  6157210
+    },
+    {
+        "SizeMB":  5.64,
+        "FullName":  "C:\\Users\\lindo\\Desktop\\SmileApp3\\SmileApp\\node_modules\\react-icons\\pi\\index.js",
+        "Length":  5912218
+    },
+    {
+        "SizeMB":  5.4,
+        "FullName":  "C:\\Users\\lindo\\Desktop\\SmileApp3\\SmileApp\\node_modules\\react-icons\\pi\\index.mjs",
+        "Length":  5663588
+    },
+    {
+        "SizeMB":  5.05,
+        "FullName":  "C:\\Users\\lindo\\Desktop\\SmileApp3\\SmileApp\\node_modules\\firebase\\firebase-compat.js.map",
+        "Length":  5290536
+    },
+    {
+        "SizeMB":  4.93,
+        "FullName":  "C:\\Users\\lindo\\Desktop\\SmileApp3\\SmileApp\\node_modules\\react-icons\\si\\index.js",
+        "Length":  5167123
+    },
+    {
+        "SizeMB":  4.86,
+        "FullName":  "C:\\Users\\lindo\\Desktop\\SmileApp3\\SmileApp\\node_modules\\react-icons\\si\\index.mjs",
+        "Length":  5097964
+    },
+    {
+        "SizeMB":  4.3,
+        "FullName":  "C:\\Users\\lindo\\Desktop\\SmileApp3\\SmileApp\\node_modules\\tailwindcss\\peers\\index.js",
+        "Length":  4504586
+    },
+    {
+        "SizeMB":  3.27,
+        "FullName":  "C:\\Users\\lindo\\Desktop\\SmileApp3\\SmileApp\\node_modules\\.cache\\babel-loader\\db8c2fc1f1c374f90def70478cdde16bfbfbb4684d95440c554d81fd8c426ade.json",
+        "Length":  3429629
+    },
+    {
+        "SizeMB":  3.26,
+        "FullName":  "C:\\Users\\lindo\\Desktop\\SmileApp3\\SmileApp\\node_modules\\react-icons\\tb\\index.js",
+        "Length":  3422445
+    },
+    {
+        "SizeMB":  3.24,
+        "FullName":  "C:\\Users\\lindo\\Desktop\\SmileApp3\\SmileApp\\node_modules\\rollup\\dist\\rollup.browser.js.map",
+        "Length":  3398069
+    },
+    {
+        "SizeMB":  3.2,
+        "FullName":  "C:\\Users\\lindo\\Desktop\\SmileApp3\\SmileApp\\node_modules\\.cache\\babel-loader\\0c4dff8cd9eeed4e2f7f5277a9aa72486d7994c53fe36565347a6c03d9c17625.json",
+        "Length":  3352425
+    },
+    {
+        "SizeMB":  3.13,
+        "FullName":  "C:\\Users\\lindo\\Desktop\\SmileApp3\\SmileApp\\node_modules\\react-icons\\tb\\index.mjs",
+        "Length":  3277734
+    },
+    {
+        "SizeMB":  2.5,
+        "FullName":  "C:\\Users\\lindo\\Desktop\\SmileApp3\\SmileApp\\node_modules\\@firebase\\firestore\\dist\\index.cjs.js.map",
+        "Length":  2617817
+    },
+    {
+        "SizeMB":  2.5,
+        "FullName":  "C:\\Users\\lindo\\Desktop\\SmileApp3\\SmileApp\\node_modules\\@firebase\\firestore\\dist\\index.esm2017.js.map",
+        "Length":  2617672
+    },
+    {
+        "SizeMB":  2.43,
+        "FullName":  "C:\\Users\\lindo\\Desktop\\SmileApp3\\SmileApp\\node_modules\\@firebase\\firestore\\dist\\index.node.cjs.js.map",
+        "Length":  2551350
+    },
+    {
+        "SizeMB":  2.43,
+        "FullName":  "C:\\Users\\lindo\\Desktop\\SmileApp3\\SmileApp\\node_modules\\@firebase\\firestore\\dist\\index.node.mjs.map",
+        "Length":  2550625
+    },
+    {
+        "SizeMB":  2.37,
+        "FullName":  "C:\\Users\\lindo\\Desktop\\SmileApp3\\SmileApp\\node_modules\\.cache\\babel-loader\\15f039b276eacfc3eb093fc12668d184e7ea3b9e3b71076bd0672ffba6ca846d.json",
+        "Length":  2485468
+    }
+]

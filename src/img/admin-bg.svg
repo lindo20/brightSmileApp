@@ -1,0 +1,93 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="adminGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#e9ecef;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dee2e6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="securityGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dc3545;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#6f42c1;stop-opacity:0.1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#adminGradient)"/>
+  
+  <!-- Security shield elements -->
+  <g opacity="0.08">
+    <!-- Shield top left -->
+    <path d="M200 150 L200 200 Q200 250 250 280 Q300 250 300 200 L300 150 Q250 130 200 150 Z" fill="url(#securityGradient)"/>
+    <path d="M230 170 L230 200 Q230 220 250 230 Q270 220 270 200 L270 170 Q250 160 230 170 Z" fill="#ffffff" opacity="0.3"/>
+    
+    <!-- Shield top right -->
+    <path d="M1600 200 L1600 250 Q1600 300 1650 330 Q1700 300 1700 250 L1700 200 Q1650 180 1600 200 Z" fill="url(#securityGradient)"/>
+    <path d="M1630 220 L1630 250 Q1630 270 1650 280 Q1670 270 1670 250 L1670 220 Q1650 210 1630 220 Z" fill="#ffffff" opacity="0.3"/>
+    
+    <!-- Shield bottom left -->
+    <path d="M300 750 L300 800 Q300 850 350 880 Q400 850 400 800 L400 750 Q350 730 300 750 Z" fill="url(#securityGradient)"/>
+    <path d="M330 770 L330 800 Q330 820 350 830 Q370 820 370 800 L370 770 Q350 760 330 770 Z" fill="#ffffff" opacity="0.3"/>
+  </g>
+  
+  <!-- Lock icons -->
+  <g opacity="0.06">
+    <!-- Lock 1 -->
+    <rect x="580" y="350" width="40" height="50" rx="5" fill="#6c757d"/>
+    <path d="M590 340 Q590 330 600 330 Q610 330 610 340 L610 350 L590 350 Z" fill="none" stroke="#6c757d" stroke-width="3"/>
+    <circle cx="600" cy="375" r="3" fill="#ffffff"/>
+    
+    <!-- Lock 2 -->
+    <rect x="1180" y="550" width="35" height="45" rx="4" fill="#6c757d"/>
+    <path d="M1188 542 Q1188 534 1197 534 Q1206 534 1206 542 L1206 550 L1188 550 Z" fill="none" stroke="#6c757d" stroke-width="2.5"/>
+    <circle cx="1197" cy="572" r="2.5" fill="#ffffff"/>
+  </g>
+  
+  <!-- Administrative chart elements -->
+  <g opacity="0.04">
+    <!-- Bar chart -->
+    <rect x="700" y="200" width="20" height="80" fill="#0d6efd"/>
+    <rect x="730" y="180" width="20" height="100" fill="#0d6efd"/>
+    <rect x="760" y="220" width="20" height="60" fill="#0d6efd"/>
+    <rect x="790" y="160" width="20" height="120" fill="#0d6efd"/>
+    
+    <!-- Pie chart representation -->
+    <circle cx="1300" cy="400" r="50" fill="#198754" opacity="0.3"/>
+    <path d="M1300 350 A50 50 0 0 1 1335 375 L1300 400 Z" fill="#dc3545" opacity="0.5"/>
+    <path d="M1335 375 A50 50 0 0 1 1315 445 L1300 400 Z" fill="#ffc107" opacity="0.5"/>
+  </g>
+  
+  <!-- Network/connection lines -->
+  <g opacity="0.03">
+    <line x1="400" y1="600" x2="600" y2="650" stroke="#6c757d" stroke-width="2"/>
+    <line x1="600" y1="650" x2="800" y2="600" stroke="#6c757d" stroke-width="2"/>
+    <line x1="800" y1="600" x2="1000" y2="680" stroke="#6c757d" stroke-width="2"/>
+    <circle cx="400" cy="600" r="8" fill="#6c757d"/>
+    <circle cx="600" cy="650" r="8" fill="#6c757d"/>
+    <circle cx="800" cy="600" r="8" fill="#6c757d"/>
+    <circle cx="1000" cy="680" r="8" fill="#6c757d"/>
+  </g>
+  
+  <!-- Professional geometric patterns -->
+  <g opacity="0.02">
+    <rect x="500" y="800" width="60" height="60" fill="#6f42c1"/>
+    <rect x="1400" y="300" width="80" height="80" fill="#6f42c1"/>
+    <rect x="900" y="150" width="50" height="50" fill="#6f42c1"/>
+  </g>
+  
+  <!-- Subtle grid for organization -->
+  <g opacity="0.015">
+    <defs>
+      <pattern id="adminGrid" width="100" height="100" patternUnits="userSpaceOnUse">
+        <path d="M 100 0 L 0 0 0 100" fill="none" stroke="#495057" stroke-width="1"/>
+      </pattern>
+    </defs>
+    <rect width="1920" height="1080" fill="url(#adminGrid)"/>
+  </g>
+  
+  <!-- Security sparkles -->
+  <g opacity="0.08">
+    <polygon points="850,300 855,310 865,310 857,318 860,328 850,322 840,328 843,318 835,310 845,310" fill="#dc3545"/>
+    <polygon points="1150,600 1155,610 1165,610 1157,618 1160,628 1150,622 1140,628 1143,618 1135,610 1145,610" fill="#6f42c1"/>
+    <polygon points="600,750 605,760 615,760 607,768 610,778 600,772 590,778 593,768 585,760 595,760" fill="#dc3545"/>
+  </g>
+</svg>

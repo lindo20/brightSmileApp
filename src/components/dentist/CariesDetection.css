@@ -1,0 +1,98 @@
+/* Caries Detection Component Styles */
+
+/* Statistics Cards Hover Effects */
+.stats-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.stats-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Icon Container Styles */
+.stats-icon-container {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border-radius: 12px !important;
+  padding: 12px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: background 0.3s ease !important;
+}
+
+.stats-card:hover .stats-icon-container {
+  background: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Typography Consistency */
+.stats-subtitle {
+  font-size: 0.9rem !important;
+  font-weight: 500 !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  margin: 0 !important;
+  letter-spacing: 0.5px !important;
+  text-transform: uppercase !important;
+}
+
+.stats-value {
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  color: white !important;
+  margin: 0 !important;
+  line-height: 1.2 !important;
+  font-family: 'Inter', 'Segoe UI', sans-serif !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .stats-value {
+    font-size: 1.6rem !important;
+  }
+  
+  .stats-subtitle {
+    font-size: 0.8rem !important;
+  }
+  
+  .stats-icon-container {
+    padding: 10px !important;
+  }
+  
+  .stats-icon-container i {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .stats-value {
+    font-size: 1.4rem !important;
+  }
+  
+  .stats-subtitle {
+    font-size: 0.75rem !important;
+  }
+}
+
+/* Color Scheme Consistency - Using App's Primary Colors */
+.gradient-purple {
+  background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%) !important;
+}
+
+.gradient-pink {
+  background: linear-gradient(135deg, #34c759 0%, #2db54e 100%) !important;
+}
+
+.gradient-blue {
+  background: linear-gradient(135deg, #4a90e2 20%, #34c759 80%) !important;
+}
+
+/* Animation for value changes */
+.stats-value {
+  transition: all 0.3s ease !important;
+}
+
+/* Focus states for accessibility */
+.stats-card:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline-offset: 2px;
+}
