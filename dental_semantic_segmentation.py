@@ -129,10 +129,25 @@ class DentalSemanticSegmentation:
         self.mean = [0.485, 0.456, 0.406]
         self.std = [0.229, 0.224, 0.225]
         
+        # Prefer provided model_path, otherwise fallback to known checkpoints
+        default_paths = [
+            "models/dental_semantic_best.pth",
+            "models/dental_segmentation_simple.pth",
+            "models/dental_segmentation_improved.pth",
+        ]
         if model_path and os.path.exists(model_path):
             self.load_model(model_path)
         else:
-            self.create_model()
+            found = None
+            for p in default_paths:
+                if os.path.exists(p):
+                    found = p
+                    break
+            if found:
+                print(f"Loading default checkpoint: {found}")
+                self.load_model(found)
+            else:
+                self.create_model()
     
     def create_model(self):
         """Create DeepLabV3Plus model"""
@@ -140,12 +155,36 @@ class DentalSemanticSegmentation:
         self.model.to(self.device)
         print(f"Created DeepLabV3Plus model on {self.device}")
     
+    def get_model_info(self):
+        """Expose model metadata for downstream consumers"""
+        return {
+            "architecture": "DeepLabV3Plus",
+            "num_classes": self.n_cls,
+            "input_size": [self.im_h, self.im_w],
+            "device": self.device,
+            "preprocessing": {"mean": self.mean, "std": self.std},
+        }
+    
     def load_model(self, model_path):
-        """Load pre-trained model"""
+        """Load a pre-trained model checkpoint (supports full model or state_dict)"""
         try:
-            self.model = torch.load(model_path, map_location=self.device)
-            self.model.to(self.device)
-            print(f"Loaded model from {model_path}")
+            checkpoint = torch.load(model_path, map_location=self.device)
+            # Case 1: Full model object saved via torch.save(model)
+            if isinstance(checkpoint, torch.nn.Module):
+                self.model = checkpoint.to(self.device)
+                print(f"Loaded full model from {model_path}")
+            # Case 2: state_dict saved via torch.save(model.state_dict())
+            elif isinstance(checkpoint, dict):
+                # Ensure a model instance exists to load weights into
+                if self.model is None:
+                    self.create_model()
+                missing, unexpected = self.model.load_state_dict(checkpoint, strict=False)
+                self.model.to(self.device)
+                self.model.eval()
+                print(f"Loaded state_dict from {model_path} (missing={len(missing)}, unexpected={len(unexpected)})")
+            else:
+                print(f"Unknown checkpoint type: {type(checkpoint)} — creating a fresh model")
+                self.create_model()
         except Exception as e:
             print(f"Error loading model: {e}")
             self.create_model()
@@ -323,23 +362,48 @@ class DentalSemanticSegmentation:
         transformed = transform(image=image)
         input_tensor = transformed["image"].unsqueeze(0).to(self.device)
         
-        # Predict
+        # Predict with autocast on CUDA for faster inference
         self.model.eval()
         with torch.no_grad():
-            prediction = self.model(input_tensor)
+            if self.device == "cuda":
+                with torch.cuda.amp.autocast():
+                    prediction = self.model(input_tensor)
+            else:
+                prediction = self.model(input_tensor)
             mask = torch.argmax(F.softmax(prediction, dim=1), dim=1)
             mask = mask.cpu().numpy().squeeze()
         
         return mask
     
-    def predict_batch(self, image_paths):
+    def predict_batch(self, image_paths, batch_size=8):
         """
-        Predict segmentation masks for multiple images
+        Predict segmentation masks for multiple images efficiently with batching
         """
+        if self.model is None:
+            raise ValueError("Model not loaded. Please train or load a model first.")
+        
         results = []
-        for image_path in image_paths:
-            mask = self.predict(image_path)
-            results.append(mask)
+        transform = self.get_transforms()
+        self.model.eval()
+        with torch.no_grad():
+            for i in range(0, len(image_paths), batch_size):
+                batch_paths = image_paths[i:i+batch_size]
+                tensors = []
+                for image_path in batch_paths:
+                    image = cv2.imread(image_path)
+                    image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+                    transformed = transform(image=image)
+                    tensors.append(transformed["image"])  # CHW torch tensor
+                if len(tensors) == 0:
+                    continue
+                input_batch = torch.stack(tensors, dim=0).to(self.device)
+                if self.device == "cuda":
+                    with torch.cuda.amp.autocast():
+                        prediction = self.model(input_batch)
+                else:
+                    prediction = self.model(input_batch)
+                masks = torch.argmax(F.softmax(prediction, dim=1), dim=1).cpu().numpy()
+                results.extend([m for m in masks])
         return results
 
 def tic_toc(start_time=None):

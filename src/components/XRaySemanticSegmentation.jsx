@@ -297,9 +297,8 @@ const XRaySemanticSegmentation = () => {
         formData.append('userRole', currentUser.role || 'patient');
       }
       
-      // Call the predict-xray API endpoint (env-driven base URL for production)
-      const apiBase = process.env.REACT_APP_API_BASE_URL || 'http://localhost:5000';
-      const response = await fetch(`${apiBase}/api/v1/predict-xray`, {
+      // Call the predict-xray API endpoint (which includes Firebase integration)
+      const response = await fetch('http://localhost:5000/api/v1/predict-xray', {
         method: 'POST',
         body: formData,
         headers: currentUser ? {

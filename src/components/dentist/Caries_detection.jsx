@@ -5881,11 +5881,11 @@ const Caries_detection = () => {
   const fileInputRef = useRef(null);
 
   // X-ray Dental Cavity Detection Model configuration
-  // Environment-driven base URL for API (falls back to localhost during dev)
-  const API_BASE = process.env.REACT_APP_API_BASE_URL || 'http://localhost:5000';
-  const MODEL_URL = `${API_BASE}/api/v1/predict-xray`;
-  const HEALTH_URL = `${API_BASE}/api/v1/health`;
-  const MODEL_INFO_URL = `${API_BASE}/api/v1/model-info`;
+  // Replace these URLs with your actual ngrok URLs from the X-ray Colab notebook
+  // When API is unavailable, the app automatically falls back to enhanced demo data
+  const MODEL_URL = "http://localhost:5000/api/v1/predict-xray";
+  const HEALTH_URL = "http://localhost:5000/api/v1/health";
+  const MODEL_INFO_URL = "http://localhost:5000/api/v1/model-info";
 
   // Load saved data on component mount
   useEffect(() => {

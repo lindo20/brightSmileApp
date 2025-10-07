@@ -21,9 +21,3 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# data: prevent committing large datasets
-/dataset/
-# also ignore large model files and sample datasets
-/models/
-/sample_dataset/
